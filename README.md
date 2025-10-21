@@ -1,7 +1,7 @@
 # 🧠 NeuroNap
 
 **NeuroNap** is an EEG-based sleep analysis tool that processes EEG CSV files to analyze sleep stages, generate hypnograms, visualize frequency spectra, and provide LLM-driven insights using **Gemini**.  
-Built with **Python** and **Gradio**, it uses YASA for sleep stage classification and HMM for clustering and offers an interactive interface for researchers and clinicians studying sleep patterns.
+Built with **Python** and **Gradio**, it uses **YASA** for sleep stage classification and **HMM** for clustering and offers an interactive interface for researchers and clinicians studying sleep patterns.
 
 ---
 
