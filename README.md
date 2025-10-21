@@ -30,3 +30,17 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+🔑 **API Setup**  
+Set your Gemini API key in a `.env` file:  
+```bash
+echo "GEMINI_API_KEY=your_api_key" > .env
+
+🧩 **Knowledge Embeddings**
+
+Before running the app, generate embeddings from your knowledge PDFs:
+
+```bash
+python rag.py
+
+Place relevant research papers or notes in the knowledge/ folder before running the above command.
