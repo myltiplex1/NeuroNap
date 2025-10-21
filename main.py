@@ -143,6 +143,7 @@ with gr.Blocks(title="NeuroNap", css=".compact-table { font-size: 12px; max-heig
     chat_btn.click(handle_chat, inputs=[chat_input, qa_chain_state], outputs=chat_output)
 
 logger.info("Launching Gradio interface")
-port = int(os.environ.get("PORT", "10000"))
-demo.launch(share=False, server_port=port, pwa=True, favicon_path="assets/icon-192x192.png")
+port = int(os.environ.get("PORT", 7860))
+logger.info(f"Launching Gradio interface on port {port}")
+demo.launch(server_name="0.0.0.0", server_port=port, pwa=True, favicon_path="assets/icon-192x192.png")
 # demo.launch(share=True)
