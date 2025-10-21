@@ -144,5 +144,5 @@ with gr.Blocks(title="NeuroNap", css=".compact-table { font-size: 12px; max-heig
 
 logger.info("Launching Gradio interface")
 port = int(os.environ.get("PORT", 7860))
-demo.launch(share=True, server_name="0.0.0.0", server_port=port, pwa=True, favicon_path="assets/icon-192x192.png")
+demo.launch(server_name="0.0.0.0", server_port=port, pwa=True, favicon_path="assets/icon-192x192.png")
 # demo.launch(share=True)
